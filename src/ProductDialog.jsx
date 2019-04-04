@@ -14,6 +14,10 @@ import Typography from '@material-ui/core/Typography';
 import CloseIcon from '@material-ui/icons/Close';
 import Slide from '@material-ui/core/Slide';
 import Products from './Products';
+import SaleProductQuantity from './SaleProductQuantity';
+import SearchProduct from './SearchProduct';
+import PlusButton from './PlusButton';
+import Loader from './Loader';
 
 const styles = {
   appBar: {
@@ -60,22 +64,19 @@ class FullScreenDialog extends React.Component {
                 <CloseIcon />
               </IconButton>
               <Typography variant="h6" color="inherit" className={classes.flex}>
-                Sound
+                Select products 
               </Typography>
               <Button color="inherit" onClick={this.handleClose}>
-                save
+                {/* save */}
+                <PlusButton/>
               </Button>
             </Toolbar>
           </AppBar>
-          {/* <List>
-            <ListItem button>
-              <ListItemText primary="Phone ringtone" secondary="Titania" />
-            </ListItem>
-            <Divider />
-            <ListItem button>
-              <ListItemText primary="Default notification ringtone" secondary="Tethys" />
-            </ListItem>
-          </List> */}
+            <SaleProductQuantity/>  
+          <div className="search-product">
+              <SearchProduct/>
+          </div>
+          <Loader/>
           <Products/>
         </Dialog>
       </div>

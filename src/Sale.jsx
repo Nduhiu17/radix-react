@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 // import Addproductbutton from './Addproductbutton';
 import SaleProducts from './SaleProducts';
 import ProductDialog from './ProductDialog';
+import SearchSaleProducts from './SearchSaleProducts';
 
 export default class Sale extends Component {
   render() {
@@ -9,7 +10,7 @@ export default class Sale extends Component {
       <div>
           <div className="main-sale-body">
                 <div className="addproduct">
-                    {/* <Addproductbutton/> */}
+                    <SearchSaleProducts/>
                     <ProductDialog/>
                 </div>
                 <SaleProducts/>

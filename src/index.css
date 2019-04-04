@@ -49,7 +49,8 @@ body {
 
 .addproduct{
   display: flex;
-  float: right;
+  /* float: right; */
+  justify-content: space-between;
   margin: 10px;
 }
 
@@ -57,4 +58,44 @@ body {
 .MuiAppBar-colorPrimary-113 {
   color: black !important;
   background-color: #f2f0f8 !important;
+}
+
+.search-product{
+  display: flex;
+  justify-content: space-around;
+}
+
+.login-main{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15%;
+}
+
+.login-left{
+  width: 30%;
+}
+
+.login-right{
+  width: 30%;
+}
+.login-center{
+  width: 40%;
+}
+
+.register-left{
+  width: 30%;
+}
+
+.register-center{
+  width: 40%;
+}
+
+.register-right{
+  width: 30%;
+}
+
+.register-main{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
 }
